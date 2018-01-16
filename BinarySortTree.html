@@ -69,8 +69,36 @@
 					callback(node.key);
 				}
 			}
+
 			this.postOrderTraverse = function(callback) {
 				postOrderTraverseNode(root, callback)
+			}
+
+			var minNode = function(node) {
+				if(node) {
+					while (node && node.left != null){
+						node = node.left;
+					}
+					return node.key;
+				}
+				return null;
+			}
+
+			this.min = function() {
+				return minNode(root);
+			}
+
+			var maxNode = function(node) {
+				if(node) {
+					while(node && node.right != null) {
+						node = node.right;
+					}
+					return node.key;
+				}
+				return null
+			}
+			this.max = function() {
+				return maxNode(root);
 			}
 		}
 
@@ -86,7 +114,9 @@
 
 		//binaryTree.inOrderTraverse(callback);
 		//binaryTree.preOrderTraverse(callback);
-		binaryTree.postOrderTraverse(callback);
+		//binaryTree.postOrderTraverse(callback);
+		console.log(binaryTree.min())
+		console.log(binaryTree.max())
  		
 	</script>
 </body>
