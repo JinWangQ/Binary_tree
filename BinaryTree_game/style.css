@@ -1,0 +1,59 @@
+#stage {
+			width: 300px;
+			height: 300px;
+			position: relative;
+		}
+
+		#background {
+			width: 300px;
+			height: 300px;
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			background-image: url(./image/background.png);
+		}
+
+		#cannon {
+			width: 20px;
+			height: 20px;
+			position: absolute;
+			top: 270px;
+			left: 140px;
+			background-image: url(./image/cannon.png);
+			-webkit-background-size: 100%;
+			background-size: 100%;
+		}
+
+		#alien {
+			width: 20px;
+			height: 20px;
+			position: absolute;
+			top: 20px;
+			left: 80px;
+			background-image: url(./image/alien.png);
+			-webkit-background-size: 100%;
+			background-size: 100%;
+		}
+
+		#missile {
+			width: 15px;
+			height: 15px;
+			position: absolute;
+			top: 240px;
+			left: 145px;
+			background-image: url(./image/missile.png);
+			-webkit-background-size: 100%;
+			background-size: 100%;
+		}
+
+		#explosion {
+			width: 20px;
+			height: 20px;
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			background-image: url(./image/explosion.png);
+			display: none;
+			-webkit-background-size: 100%;
+			background-size: 100%;
+		}
